@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,8 +12,9 @@ export class LoginComponent implements OnInit {
   myParams: object = {};
   width: number = 100;
   height: number = 100;
+  loader: boolean = false;
 
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit() {
     this.myStyle = {
@@ -47,5 +49,9 @@ export class LoginComponent implements OnInit {
           }
     };
   }
+  nav() {
+    this.loader= true;
+    setTimeout(() => {this.router.navigate(['/dashboard']);}, 3000)
+};
 
 }
