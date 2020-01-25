@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+// import { EventEmitter } from 'events';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  message: boolean = false;
+  // @Input() childMessage: boolean
+  @Output() messageEvent = new EventEmitter<boolean>();
   constructor() { }
 
   ngOnInit() {
   }
-
+  
+  sendMessage() {
+    this.message = !this.message;
+    this.messageEvent.emit(this.message)
+  }
 }

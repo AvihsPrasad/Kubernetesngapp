@@ -1,8 +1,12 @@
 <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark pink ie-nav fixed-top" [containerInside]="false">
-    <mdb-navbar-brand>
-        <a class="logo navbar-brand" href="#"><strong>Agsool</strong></a>
+    <mdb-navbar-brand class="left" style="background:#9dab86;padding:0.5rem 0;padding-left:30px;">
+        <a class="logo navbar-brand" href="#"><strong>Agsool{{message}}</strong></a>
+        <button mdbBtn type="button" color="elegant" class="show tog-btn" (click)="sendMessage()">
+            <mdb-icon fas icon="chevron-right"></mdb-icon>
+        </button>
     </mdb-navbar-brand>
-    <links>
+    <!--<div>-->
+        <links class="right" style="padding: 0.5rem 1rem 0.5rem 5rem;">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active waves-light" mdbWavesEffect>
                 <a class="nav-link">Home <span class="sr-only">(current)</span></a>
@@ -29,6 +33,7 @@
             </li>
         </ul>
     </links>
+<!-- </div>-->
 </mdb-navbar>
 <!-- Main -->
   <main>

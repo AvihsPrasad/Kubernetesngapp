@@ -16,7 +16,8 @@ import { NavbarModule, WavesModule, ButtonsModule, BadgeModule,BreadcrumbModule,
   IconsModule, InputsModule, InputUtilitiesModule, ModalModule, PopoverModule, TableModule,
   TooltipModule } from 'angular-bootstrap-md'
 import {MatCardModule, MatIconModule, MatProgressBarModule} from '@angular/material';
-import { PieChartComponent } from './pie-chart/pie-chart.component'
+import { PieChartComponent } from './pie-chart/pie-chart.component';
+import { LandingComponent } from './landing/landing.component'
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { PieChartComponent } from './pie-chart/pie-chart.component'
     LoginComponent,
     DashboardComponent,
     NavbarComponent,
-    PieChartComponent
+    PieChartComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,

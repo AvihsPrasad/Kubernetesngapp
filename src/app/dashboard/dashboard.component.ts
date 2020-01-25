@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DashboardComponent implements OnInit {
 
   public chartType: string = 'line';
+  public msg: boolean = true;
 
   public chartDatasets: Array<any> = [
     { data: [65, 59, 80, 81, 56, 55, 40], label: 'My First dataset' },
@@ -73,6 +74,12 @@ export class DashboardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  recivemsg($event){
+    this.msg = $event
+    console.log('this.msg '+ this.msg)
+    // if (this.msg)
   }
 
 }
