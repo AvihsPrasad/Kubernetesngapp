@@ -1,7 +1,7 @@
 <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark pink ie-nav fixed-top" [containerInside]="false">
     <mdb-navbar-brand class="left" style="background:#9dab86;padding:0.5rem 0;padding-left:30px;">
-        <a class="logo navbar-brand" href="#"><strong>Agsool{{message}}</strong></a>
-        <button mdbBtn type="button" color="elegant" class="show tog-btn" (click)="sendMessage()">
+        <a class="logo navbar-brand" href="#"><strong>Agsool</strong></a>
+        <button mdbBtn type="button" color="elegant" class="show tog-btn rotar" [ngClass]="message ? 'rt180' : 'rt90'" (click)="sendMessage()">
             <mdb-icon fas icon="chevron-right"></mdb-icon>
         </button>
     </mdb-navbar-brand>

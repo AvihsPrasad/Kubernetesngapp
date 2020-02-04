@@ -1,4 +1,42 @@
 /* body{background-color: #eee;} */
+.leftslide{
+    width: 200px;
+    height: calc(100vh - 56px);
+    /* background-color: #21243d; */
+    background-color: #000;
+    float: left;
+}
+.leftslide.full{
+    transition-duration: 0.5s;
+    transition-property: width;
+}
+.leftslide.short{
+    width: 60px;
+    transition-duration: 0.5s;
+}
+.leftslide.short:hover{
+    width: 200px;
+    position: absolute;
+    transition-duration: 0.5s;
+    z-index: 9;
+}
+.rightblock{
+    position: relative;
+    width: calc(100% - 200px);
+    max-height: calc(100vh - 56px);
+    overflow-y: auto;
+    float: right;
+    /* border: 2px solid; */
+}
+.rightblock.full{
+    transition-duration: 0.5s;
+    transition-property: width;
+}
+.rightblock.short{
+    width: calc(100% - 60px);
+    transition-duration: 0.5s;
+}
+
 .main-class{
     padding:60px 60px 0 60px;
 }

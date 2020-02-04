@@ -1,0 +1,9 @@
+.rotar.rt180 .fas{
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+.rotar.rt90 .fas{
+    transform: rotate(180deg);
+    transition-duration: 0.5s;
+    -webkit-transform: rotate(180deg);
+}
