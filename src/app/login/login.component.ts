@@ -26,6 +26,7 @@ export class LoginComponent implements OnInit {
       'left': 0,
       'right': 0,
       'bottom': 0,
+      'background': '#333333',
     };
 
     this.myParams = {
@@ -34,14 +35,14 @@ export class LoginComponent implements OnInit {
                   value: 200,
               },
               color: {
-                  value: '#be9fe1'
+                  value: '#00a8cc'
               },
               shape: {
                   type: 'circle',
               },
               line_linked: {
                 enable_auto: true,
-                color: '#c9b6e4',
+                color: '#00a8cc',
                 distance: 150,
                 opacity: 0.4,
                 width: 1
